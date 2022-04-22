@@ -81,7 +81,7 @@ hr {
 .creation {
   color: hsl(215, 51%, 70%);
 }
-@@media only screen and (max-width:48px) {
+@@media only screen and (max-width:480px) {
 .nft-card{
   width:80%;
 }
