@@ -5,85 +5,109 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   background-color: hsl(217, 54%, 11%);
+  width: 100vw;
+  height: 100%;
+  margin: auto;
+  text-align:center;
 }
 
 .nft-card {
-  box-sizing: border-box;
   background-color: hsl(216, 50%, 16%);
-  width: 17%;
-  height: 58%;
-  margin: auto;
   text-align: left;
-  border-radius: 10px;
+  width: 20%;
+  height: 100%;
   font-family: 'Outfit', sans-serif;
-  padding: 20px;
+  font-size: 18px;
+  margin: auto;
+  padding: 1%;
+  border-radius: 10px;
+  color: hsl(215, 51%, 70%);
   margin-top: 8%
+
+}
+.image-container{
+  width:100%;
+  position: relative;
+  text-align:center;
+  margin-bottom: 4%;
+}
+.cube-image{
+  width:100%;
+
+  border-radius: 10px;
 }
 
-.cube-image {
+.layover{
+  position: absolute;
+  background-color: hsl(178, 100%, 50%);
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 5%
+  height: 100%;
+  top:0;
+  opacity:0;
+  border-radius: 10px;
+}
+.view-icon{
+position: absolute;
+top:40%;
+left:42%;
+}
+.image-container:hover .layover{
+  opacity: 0.6;
+  cursor: pointer;
+}
+.image-container:hover .view-icon{
+  opacity: 1;
 }
 
-.jules {
-  width: 8%;
+.name{
+ color:hsl(178, 100%, 50%);
+ text-decoration: none;
+ font-family: 'Outfit', sans-serif;
+ font-weight: 700;
+
+}
+
+.description{
+color: hsl(215, 51%, 70%);
+margin-bottom: 10%;
+margin-top: 10%;
+}
+
+.price{
+  color:hsl(178, 100%, 50%);
+  display: inline-block;
+  width: 60%
+}
+
+ hr{
+   margin: auto;
+   border-style: solid none none none;
+   border-color: hsl(215, 51%, 70%);
+   margin-top: 8%;
+   margin-bottom: 6%;
+ }
+
+
+.jules-pic{
+  width: 10%;
  border: 1px solid white;
   border-radius: 50%;
-  float: left;
-  margin-right: 6%;
-}
-
-hr {
-  margin: auto;
-  border-style: solid none none none;
-  border-color: hsl(215, 51%, 70%);
-  margin-top: 8%;
-  margin-bottom: 6%;
-}
-
-.name {
-  color: white;
-  font-weight: 600;
-  margin-bottom: 5%;
-}
-
-.description {
-  color: hsl(215, 51%, 70%);
-  font-weight: lighter;
-  margin-bottom: 10%;
-  font-size: 92%
-}
-
-.price {
-  color: hsl(178, 100%, 50%);
-  display: inline-block;
-  margin-right: 35%;
-  font-weight: 300;
-}
-
-.time-left {
-  display: inline-block;
-  color: hsl(215, 51%, 70%);
-  font-weight: 300;
-}
-
-.creator {
-  color: white;
-  font-weight: lighter;
-  font-size: 95%;
+  vertical-align:middle;
+  margin-right: 4%;
 
 }
-
-.creation {
-  color: hsl(215, 51%, 70%);
+.jules-name{
+  color:white;
+  text-decoration: none;
+  font-size:85%;
 }
+.creation{
+  font-size: 85%
+}
+
 @media only screen and (max-width:480px) {
 .nft-card{
   width:87%;
-  height:82%;
-}
+  height: 82%;
 }
