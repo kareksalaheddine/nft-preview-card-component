@@ -61,11 +61,14 @@ left:42%;
 }
 
 .name{
- color:hsl(178, 100%, 50%);
+ color:white;
  text-decoration: none;
  font-family: 'Outfit', sans-serif;
  font-weight: 700;
+}
 
+.name:hover{
+  color:hsl(178, 100%, 50%);
 }
 
 .description{
